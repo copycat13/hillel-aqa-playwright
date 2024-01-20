@@ -1,5 +1,5 @@
 // @ts-check
-const { defineConfig, devices } = require("@playwright/test");
+const { defineConfig, devices } = require('@playwright/test');
 
 /**
  * Read environment variables from file.
@@ -11,7 +11,7 @@ const { defineConfig, devices } = require("@playwright/test");
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
-  testDir: "./e2e",
+  testDir: './e2e',
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -21,16 +21,16 @@ module.exports = defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: "html",
+  reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: "https://qauto.forstudy.space/",
+    baseURL: 'https://qauto.forstudy.space/',
     httpCredentials: {
-      username: "guest",
-      password: "welcome2qauto",
+      username: 'guest',
+      password: 'welcome2qauto',
     },
-    trace: "on",
-    browserName: "chromium",
+    trace: 'on',
+    browserName: 'chromium',
   },
   expect: {
     // Maximum time expect() should wait for the condition to be met.
@@ -40,8 +40,10 @@ module.exports = defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "chromium",
-      use: { ...devices["Desktop Chrome"] },
+      name: 'homework15',
+      testDir: './e2e/',
+      testMatch: 'registration_tests.spec.js',
+      use: { ...devices['Desktop Chrome'] },
     },
 
     // {
