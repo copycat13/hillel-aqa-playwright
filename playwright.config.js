@@ -42,7 +42,7 @@ module.exports = defineConfig({
     {
       name: 'homework15',
       testDir: './e2e/',
-      testMatch: 'registration_tests.spec.js',
+      testMatch: 'registration.spec.js',
       use: { ...devices['Desktop Chrome'] },
     },
 
