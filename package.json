@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test --config=configs/homework_17.config.js --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -11,5 +13,8 @@
     "@playwright/test": "^1.40.1",
     "@types/node": "^20.11.0",
     "prettier": "3.2.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1"
   }
 }
