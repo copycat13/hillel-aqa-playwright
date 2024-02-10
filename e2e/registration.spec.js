@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import WelcomePage from '../src/pages/WelcomePage';
 import RegistartionForm from '../src/components/RegistrationForm';
-import ProfileSettingsPage from '../src/pages/ProfileSettingsPage';
+import SettingsPage from '../src/pages/SettingsPage';
 
 test.describe('New user registration', () => {
   test.beforeEach('go to registartion form', async ({ page }) => {
@@ -17,8 +17,8 @@ test.describe('New user registration', () => {
     const profilePage = await registrationForm.clickRegisterBtn();
     await expect(page).toHaveURL('/panel/garage');
     await profilePage.clickSettingBtn();
-    const profileSettingsPage = new ProfileSettingsPage(page);
-    await profileSettingsPage.deleteAccount();
+    const settingsPage = new SettingsPage(page);
+    await settingsPage.deleteAccount();
     await expect(page).toHaveURL('/');
   });
 

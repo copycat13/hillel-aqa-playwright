@@ -6,4 +6,8 @@ export default class WelcomePage extends BasePage {
     super(page, '/');
     this.header = new Header(page);
   }
+
+  async navigateTo() {
+    await super.navigate();
+  }
 }

@@ -1,6 +1,8 @@
 node_modules/
+monocart-results
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 .DS_Store
+src/.DS_Store
