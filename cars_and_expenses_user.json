@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "YSC",
+      "value": "T6CDVR-IG28",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "VISITOR_INFO1_LIVE",
+      "value": "zXeZOoE81Co",
+      "domain": ".youtube.com",
+      "path": "/",
+      "expires": 1723082398.996748,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sid",
+      "value": "s%3AQ-IzDb4KXv48DbvQUF-2xcFedNghJwvr.jnvnX%2Fmdc3121N818xiSqlfKFWdQOyxuL5whNhzKDzY",
+      "domain": ".forstudy.space",
+      "path": "/",
+      "expires": 1707616800.48707,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

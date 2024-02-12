@@ -1,6 +1,6 @@
 import BasePage from './BasePage';
 
-export default class ProfileSettingsPage extends BasePage {
+export default class SettingsPage extends BasePage {
   constructor(page) {
     super(page, '/panel/settings');
     this.removeAccountBtn = this._page.locator('.btn-danger-bg');

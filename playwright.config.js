@@ -11,7 +11,8 @@ const { defineConfig, devices } = require('@playwright/test');
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
-  testDir: './e2e',
+  testDir: '../e2e/',
+  testMatch: '*.spec.js',
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -43,6 +44,20 @@ module.exports = defineConfig({
       name: 'homework15',
       testDir: './e2e/',
       testMatch: 'registration.spec.js',
+      use: { ...devices['Desktop Chrome'] },
+    },
+
+    {
+      name: 'homework18',
+      testDir: './e2e/',
+      testMatch: 'fuelExpenses.spec.js',
+      use: { ...devices['Desktop Chrome'] },
+    },
+
+    {
+      name: 'login',
+      testDir: '../e2e',
+      testMatch: 'loginStorage.spec.js',
       use: { ...devices['Desktop Chrome'] },
     },
 
