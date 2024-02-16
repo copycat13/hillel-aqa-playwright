@@ -1,5 +1,5 @@
 import BasePage from '../BasePage';
-import ProfilePage from '../ProfilePage';
+import ProfilePage from '../GaragePage';
 import AddExpensePopup from './components/AddExpensePopup';
 import { EditExpensePopup } from './components/EditExpensePopup';
 import { RemoveEntryPopup } from './components/RemoveEntryPopup';

@@ -36,7 +36,7 @@ test.describe('Users from fuel expenses tests', () => {
   });
 });
 
-async function login(page, email, password) {
+export async function login(page, email, password) {
   const welcomePage = new WelcomePage(page);
   await welcomePage.navigateTo();
   const loginForm = await welcomePage.header.clickLoginBtn();

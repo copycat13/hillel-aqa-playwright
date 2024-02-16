@@ -1,6 +1,6 @@
 const base = require('@playwright/test');
 const { chromium } = require('@playwright/test');
-import ProfilePage from '../pages/ProfilePage';
+import GaragePage from '../pages/GaragePage';
 
 export const test = base.test.extend({
   noCarsFuelPage: async ({}, use) => {
