@@ -22,7 +22,16 @@ module.exports = defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    [
+      'monocart-reporter',
+      {
+        open: 'always',
+        name: 'monocart',
+        outputFile: './monocart-results/report.html',
+      },
+    ],
+  ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     baseURL: 'https://qauto.forstudy.space/',
@@ -51,6 +60,13 @@ module.exports = defineConfig({
       name: 'homework18',
       testDir: './e2e/',
       testMatch: 'fuelExpenses.spec.js',
+      use: { ...devices['Desktop Chrome'] },
+    },
+
+    {
+      name: 'homework19',
+      testDir: './e2e/',
+      testMatch: 'profileNetwork.spec.js',
       use: { ...devices['Desktop Chrome'] },
     },
 
