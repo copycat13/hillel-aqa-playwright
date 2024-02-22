@@ -1,23 +1,23 @@
 {
-  "name": "hillel-aqa-playwright",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "npx playwright test --config=configs/homework_17.config.js --headed",
-    "test:hw18": "npx playwright test --config=configs/homework_18.config.js --headed"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@playwright/test": "^1.40.1",
-    "@types/node": "^20.11.0",
-    "monocart-reporter": "^2.3.0",
-    "prettier": "3.2.4"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.1",
-    "pixelmatch": "^5.3.0"
-  }
+    "name": "hillel-aqa-playwright",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx playwright test --project=homework22 --headed",
+        "test:hw18": "npx playwright test --config=configs/homework_18.config.js --headed"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@playwright/test": "^1.40.1",
+        "@types/node": "^20.11.0",
+        "monocart-reporter": "^2.3.0",
+        "prettier": "3.2.4"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.1",
+        "pixelmatch": "^5.3.0"
+    }
 }
