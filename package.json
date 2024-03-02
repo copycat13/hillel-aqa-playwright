@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "test": "npx playwright test --project=homework22 --headed",
-        "test:hw18": "npx playwright test --config=configs/homework_18.config.js --headed"
+        "test:hw18": "npx playwright test --config=configs/homework_18.config.js --headed",
+        "test:hw23": "npx playwright test registration.spec.js"
     },
     "keywords": [],
     "author": "",

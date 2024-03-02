@@ -1,0 +1,26 @@
+name: 'Playwright tests on push'
+
+on:
+    push:
+        branches:
+            - HILLEL_HomeWork_23_Asedovska
+
+jobs:
+    tests:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: '20'
+            - name: Run Playwright tests
+              run: |
+                  docker-compose up --exit-code-from tests
+            - name: Upload test results
+              if: always()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: test-results
+                  path: monocart-results/
